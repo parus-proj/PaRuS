@@ -1,4 +1,7 @@
-## Welcome to GitHub Pages
+## Здравствуйте, Юрий Петрович!
+Основы создания простых сайтов на github изложены в:
+- [https://pages.github.com/](https://pages.github.com/)
+- [https://guides.github.com/features/pages/](https://guides.github.com/features/pages/)
 
 You can use the [editor on GitHub](https://github.com/parus-proj/PaRuS/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
