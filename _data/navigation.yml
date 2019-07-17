@@ -1,4 +1,6 @@
-- name: Home
+- name: Главная
   link: /
-- name: Downloads
+- name: Методология
+  link: methods.html
+- name: Скачать
   link: downloads.html
