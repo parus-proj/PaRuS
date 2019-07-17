@@ -1,6 +1,6 @@
 - name: Главная
   link: /
 - name: Методология
-  link: methods.md
+  link: methods.html
 - name: Скачать
-  link: downloads.md
+  link: downloads.html
