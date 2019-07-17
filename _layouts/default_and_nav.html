@@ -28,9 +28,6 @@
           <a href="{{ site.github.owner_url }}" class="button"><small>Follow me on</small> GitHub</a>
         {% endif %}
       </div>
-      <div>
-        {% include navigation.html %}
-      </div>
     </header>
 
     <div id="content-wrapper">
@@ -40,6 +37,9 @@
         </section>
 
         <aside id="sidebar">
+      <div>
+        {% include navigation.html %}
+      </div>
           
           
           {% if site.show_downloads %}
