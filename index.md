@@ -1,3 +1,6 @@
+---
+layout: default_and_nav
+---
 ## Здравствуйте, Юрий Петрович!
 Основы создания простых сайтов на github изложены в:
 - [https://pages.github.com/](https://pages.github.com/)
