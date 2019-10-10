@@ -2,4 +2,4 @@
 layout: default_and_nav
 title: Downloads
 ---
-Downloads test page.
+Страница находится в разработке… Уже скоро!
