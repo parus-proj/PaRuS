@@ -1,10 +1,10 @@
 - name: Главная
   link: /
-- name: Формат
-  link: /format.html
+- name: Скачать
+  link: /downloads.html
+- name: Инструкция
+  link: /guide.html
 - name: Методология
   link: /methods.html
 - name: PaRuS_pipe
   link: /parus_pipe.html
-- name: Скачать
-  link: /downloads.html
