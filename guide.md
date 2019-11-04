@@ -24,4 +24,17 @@ layout: default_and_nav
 ![EER-диаграмма БД parus](./assets/images/parus_db_scheme.png)
 
 ## Примеры запросов
+Для выполнения запросов запустите MySQL Workbench, подключитесь к СУБД и выберите БД parus в качестве «БД по умолчанию».
 
+Для выборки данных корпуса PaRuS в формате CoNLL используйте следующий запрос:
+
+```sql
+select pl.id, pl.sentence_id, pl.token_no, plt.token, pln.norma, SUBSTR(plm.msd,1,1) as pos_1, SUBSTR(plm.msd,1,1) as pos_2, plm.msd, pl.head_token_no, plsr.syn_rel
+from parus_light pl
+    inner join parus_light_token_dict plt on pl.token_id = plt.id
+    inner join parus_light_norma_dict pln on pl.norma_id = pln.id
+    inner join parus_light_msd_dict plm on pl.msd_id = plm.id
+    inner join parus_light_synrel_dict plsr on pl.syn_rel_id = plsr.id
+order by pl.sentence_id, pl.token_no
+;
+```
