@@ -38,3 +38,25 @@ from parus_light pl
 order by pl.sentence_id, pl.token_no
 ;
 ```
+
+Наличие индексов упрощает поиск предложений и словосочетаний, в которых употреблено определённое слово. Например, чтобы выбрать из корпуса только предложения, содержащие слово «хомячок», можно воспользоваться таким запросом:
+
+```sql
+select pl.id, pl.sentence_id, pl.token_no, plt.token, pln.norma, plm.msd, pl.head_token_no, plsr.syn_rel
+from parus_light pl
+  inner join parus_light_token_dict plt on pl.token_id = plt.id
+  inner join parus_light_norma_dict pln on pl.norma_id = pln.id
+  inner join parus_light_msd_dict plm on pl.msd_id = plm.id
+  inner join parus_light_synrel_dict plsr on pl.syn_rel_id = plsr.id
+  inner join 
+  (
+    select distinct plint.sentence_id
+    from parus_light plint
+      inner join parus_light_norma_dict plnint on plint.norma_id = plnint.id
+    where plnint.norma = "хомячок"
+  ) plx on plx.sentence_id = pl.sentence_id
+order by pl.sentence_id, pl.token_no
+;
+```
+
+В БД корпуса PaRuS индексы созданы для поиска по токенам и нормальным формам. Для ускорения поиска с использованием типов синтаксических отношений или морфологических атрибутов требуется построение индексов по соответствующим полям таблицы parus_light.
