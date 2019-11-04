@@ -2,7 +2,7 @@
 layout: default_and_nav
 title: Downloads
 ---
-##Версия 1.0.0
+## Версия 1.0.0
 
 Корпус размещён в репозитории Zenodo по адресу [https://zenodo.org/record/3522124](https://zenodo.org/record/3522124).
 
