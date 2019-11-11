@@ -2,7 +2,7 @@
 layout: default_and_nav
 ---
 ## Вводные замечания об устройстве корпуса
-Корпус PaRuS представляет собой базу данных MySQL. Для работы с корпусом требуется установка СУБД и программного обеспечения для выполнения запросов. Мы рекомендуем [MySQL Community Edition](https://www.mysql.com/products/community) — свободно распространяемую версию СУБД MySQL (лицензия [GPL](https://ru.wikipedia.org/wiki/GNU_General_Public_License)). На страницах сайта можно найти:
+Корпус PaRuS представляет собой базу данных MySQL. Для работы с корпусом требуется установка СУБД и программного обеспечения для выполнения запросов. Мы рекомендуем [MySQL Community Edition](https://www.mysql.com/products/community) — свободно распространяемую версию СУБД MySQL (лицензия [GPL](https://ru.wikipedia.org/wiki/GNU_General_Public_License)). На сайте MySQL можно найти:
 - актуальную версию самой СУБД — [MySQL Community Server](https://dev.mysql.com/downloads/mysql);
 - оригинальное программное обеспечение для выполнения запросов — [MySQL Workbench](https://dev.mysql.com/downloads/workbench).
 
@@ -14,7 +14,7 @@ layout: default_and_nav
 [Загрузите архив](./downloads.html), содержащий резервную копию БД PaRuS, и распакуйте его. В Linux это можно сделать командой `gzip -d имя_архива.gz`. В Windows воспользуйтесь подходящим архиватором, например, [7-zip](https://www.7-zip.org).
 
 #### Шаг 3. Восстановление таблиц корпуса PaRuS из резервной копии
-В Linux это удобнее сделать, воспользовавшись консольной утилитой mysql. Общий вид команды: `mysql -u USER -p DATABASE < /path/to/dump.sql`. (процесс распаковки и восстановления из бэкапа можно совместить: `gunzip < /path/to/dump.sql.gz | mysql -u USER -p DATABASE`).  Здесь USER — имя пользователя СУБД (можно использовать имя администратора — root), DATABASE — имя созданной БД (parus, см. Шаг 1). Утилита запросит пароль пользователя СУБД.
+В Linux это удобнее сделать, воспользовавшись консольной утилитой mysql. Общий вид команды: `mysql -u USER -p DATABASE < /path/to/dump.sql` (процесс распаковки и восстановления из бэкапа можно совместить: `gunzip < /path/to/dump.sql.gz | mysql -u USER -p DATABASE`).  Здесь USER — имя пользователя СУБД (можно использовать имя администратора — root), DATABASE — имя созданной БД (parus, см. Шаг 1). Утилита запросит пароль пользователя СУБД.
 
 Следует принимать во внимание, что процесс восстановления из резервной копии занимает длительное время.
 
