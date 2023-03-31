@@ -2,8 +2,8 @@
 layout: default_and_nav
 title: Downloads
 ---
-## Версия 1.2.2
-Корпус размещён в репозитории Zenodo по адресу [https://zenodo.org/record/6947410](https://zenodo.org/record/6947410).
+## Версия 1.3.0
+Корпус размещён в репозитории Zenodo по адресу [https://zenodo.org/record/7787891](https://zenodo.org/record/7787891).
 
 Требования к объёму дискового пространства:
 - архив для загрузки ≈17 Гб;
@@ -11,6 +11,13 @@ title: Downloads
 - таблицы базы данных после восстановления из бэкапа ≈210 Гб (включая индексы).
 
 Подробную информацию по установке и использованию корпуса см. на странице «[Инструкция](./guide.html)».
+
+Для ссылки на данные используйте: *Trofimov, Igor, Serdyuk, Yury, Vlasova, Natalia, Suleymanova, Elena, & Vozdvizhenskii, Ilya. (2023). PaRuS (1.3.0) \[Data set\]. Zenodo. [https://doi.org/10.5281/zenodo.7787891](https://doi.org/10.5281/zenodo.7787891)*
+
+Кроме резервной копии БД корпус доступен в текстовом conll-формате.
+
+## Версия 1.2.2
+[https://zenodo.org/record/6947410](https://zenodo.org/record/6947410). Архив для загрузки ≈17 Гб.
 
 Для ссылки на данные используйте: *Trofimov, Igor, Serdyuk, Yury, Vlasova, Natalia, Suleymanova, Elena, & Vozdvizhenskii, Ilya. (2022). PaRuS (1.2.2) \[Data set\]. Zenodo. [https://doi.org/10.5281/zenodo.6947410](https://doi.org/10.5281/zenodo.6947410)*
 
